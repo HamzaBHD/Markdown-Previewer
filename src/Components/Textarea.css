@@ -1,0 +1,92 @@
+.textarea--container {
+  width: 400px;
+  height: 80vh; 
+  box-shadow: 0 0 10px black;  
+  background-color: #ffffff;
+  border-radius: 7px;
+  margin-top: 30px;
+}
+
+.control--bar{
+  background-color: #ffffff;
+  color: #201a04;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: lighter; 
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  border-radius: 7px;
+}
+
+.control--bar > h6 {
+  height: 100%;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  font-size: large;  
+  user-select: none;
+}
+
+.control--bar > h6:hover {
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px gray;
+
+}
+
+textarea {
+  width: 100%;
+  min-height: 96%;
+  max-height: 96%;
+  background-color: #ffffff;
+  padding: 10px;
+  user-select: none;
+  border: none;
+  border-radius: 7px;
+  letter-spacing: 2px;
+  font-size: 15px;
+  resize: none;
+}
+
+textarea::-webkit-scrollbar {
+  width: .4vw;
+}
+
+textarea::-webkit-scrollbar-track {
+  background: #f8f8f8;
+  border-radius: 10px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background: #ffe891;
+  border-radius: 10px;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+  background: #fff3c8;
+}
+
+textarea::-webkit-scrollbar-track:hover {
+  background: #f0f0f0;
+}
+
+
+textarea:focus, input:focus{
+  outline: 0;
+}
+
+@media screen and (max-width: 500px) {
+    .textarea--container {
+      width: 400px;
+      height: 20vh;
+      margin-top: 30px;
+    }
+  
+    textarea {
+      width: 100%;
+      min-height: 16.5vh;
+      max-height: 16.5vh;
+    }
+  
+  }
