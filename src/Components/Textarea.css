@@ -85,8 +85,15 @@ textarea:focus, input:focus{
   
     textarea {
       width: 100%;
-      min-height: 16.5vh;
-      max-height: 16.5vh;
+      min-height: 16vh;
+      max-height: 16vh;
     }
-  
   }
+
+@media screen and (max-height: 700px) {
+  .textarea--container {
+    width: 400px;
+    /* height: 20vh; */
+    margin-top: 30px;
+  }
+}
