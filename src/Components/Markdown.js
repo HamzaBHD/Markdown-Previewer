@@ -1,32 +1,28 @@
 import React from "react";
 import './Markdown.css'
-import ReactMarkdown from "react-markdown";
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import {docco} from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { marked } from "marked";
 
-export default function Markdown(props) {
+function Markdown({ markdown }) {
+    marked.setOptions({
+      breaks: true
+    });
+
+    const renderer = new marked.Renderer();
+
+
     return (
         <div className='previewer--container'>
             <div className='previewer--bar'>
               <h6>previewer</h6>
             </div>
-            <div id='preview' className="markdown--container">
-            <ReactMarkdown 
-              children={props.text}
-              className='markdown'
-              renderers={{
-                code: Component,
+            <div id='preview'
+              dangerouslySetInnerHTML={{
+                __html: marked(markdown, { renderer: renderer }),
               }}
-            />
+            >
             </div>
         </div>
     )
 }
 
-const Component = ({value, language}) => {
-    return (
-      <SyntaxHighlighter language={language ?? null} style={docco}>
-        {value ?? ''}
-      </SyntaxHighlighter>
-    );
-  };
+  export default Markdown;
