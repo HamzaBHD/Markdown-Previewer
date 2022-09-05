@@ -2,10 +2,6 @@ import './App.css';
 import React , { useState } from 'react';
 import Textarea from './Components/Textarea';
 import Markdown from './Components/Markdown';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap-icons/font/bootstrap-icons.css';
-import ReactMarkdown from 'react-markdown';
-
 
 function App() {
 
@@ -81,6 +77,6 @@ const [formData, setFormData] = useState({
       </div>
     </main>
   ); 
-}
+};
 
 export default App;

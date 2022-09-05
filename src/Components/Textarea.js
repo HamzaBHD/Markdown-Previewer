@@ -2,7 +2,7 @@ import React from "react";
 import './Textarea.css'
 
 
-export default function Textarea(props) {
+const Textarea = ({ text, handleChange }) => {
     return (
         <div className="textarea--container">
           <div className='control--bar'>
@@ -12,9 +12,11 @@ export default function Textarea(props) {
            name='textarea'
            type='textarea'
            id='editor'
-           value={props.text}
-           onChange={props.handleChange}
+           value={text}
+           onChange={handleChange}
             />
         </div>
     )
 }
+
+export default Textarea; 

@@ -1,6 +1,6 @@
 .textarea--container {
   width: 400px;
-  height: 80vh; 
+  height: 750px; 
   box-shadow: 0 0 10px black;  
   background-color: #ffffff;
   border-radius: 7px;
@@ -36,9 +36,8 @@
 }
 
 textarea {
-  width: 100%;
-  min-height: 96%;
-  max-height: 96%;
+  width: 380px;
+  height: 700px;
   background-color: #ffffff;
   padding: 10px;
   user-select: none;
@@ -74,26 +73,4 @@ textarea::-webkit-scrollbar-track:hover {
 
 textarea:focus, input:focus{
   outline: 0;
-}
-
-@media screen and (max-width: 500px) {
-    .textarea--container {
-      width: 400px;
-      height: 20vh;
-      margin-top: 30px;
-    }
-  
-    textarea {
-      width: 100%;
-      min-height: 16vh;
-      max-height: 16vh;
-    }
-  }
-
-@media screen and (max-height: 700px) {
-  .textarea--container {
-    width: 400px;
-    /* height: 20vh; */
-    margin-top: 30px;
-  }
 }

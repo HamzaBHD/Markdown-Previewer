@@ -1,6 +1,4 @@
 .previewer--container {
-    width: 800px;
-    height: 80vh;
     background-color: #2d1f06;
     box-shadow: 0 0 10px black;
     color: #ffffff;
@@ -34,9 +32,9 @@
   }
   
   #preview{
-    padding: 10px;
+    padding: 10px 25px;
     width: 800px;
-    height: 740px;
+    height: 700px;
     outline: none;
     font-family: 'Mukta', sans-serif;
     letter-spacing: 2px;
@@ -66,15 +64,16 @@
   }
   
 #preview code {
+  color: #000;
   background-color: #FFF;
   border-radius: 6px;
-  padding: 5px 10px;
+  padding: 3px 8px;
   font-size: 12px;
   font-weight: bold;
 }
 
 #preview pre {
   background-color: #FFF;
-  padding: 5px 10px;
+  padding: 3px 10px;
   color:#000; 
 }
